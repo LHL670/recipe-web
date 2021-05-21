@@ -3,16 +3,16 @@ import React from 'react';
 function Header() {
     return (
         <header style={headerStyle}>
-            <h1>CGU List</h1>
+            <h1>TODO List</h1>
         </header>
     )
 }
 
 const headerStyle = {
     
-    color: 'black',
-    textAlign: 'center',
-    padding: '10px'
+    color: 'white',
+    background:'#2894FF',
+    width:'160px'
 }
 
 
