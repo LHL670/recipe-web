@@ -43,3 +43,43 @@ For CI servers and headless environments, generate a new token with firebase log
     at async init (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
 [error] 
 [error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2021-06-22T12:19:10.897Z] ----------------------------------------------------------------------
+[debug] [2021-06-22T12:19:10.898Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-06-22T12:19:10.899Z] CLI Version:   9.13.1
+[debug] [2021-06-22T12:19:10.899Z] Platform:      win32
+[debug] [2021-06-22T12:19:10.899Z] Node Version:  v14.16.1
+[debug] [2021-06-22T12:19:10.900Z] Time:          Tue Jun 22 2021 20:19:10 GMT+0800 (台北標準時間)
+[debug] [2021-06-22T12:19:10.900Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-22T12:19:10.905Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-06-22T12:19:10.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-22T12:19:10.925Z] > authorizing via signed-in user (sallylu12066@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\USER\Desktop\web_final
+
+[debug] [2021-06-22T12:19:11.891Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-06-22T12:19:11.891Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-06-22T12:20:13.171Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-22T12:20:13.171Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-22T12:20:13.280Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 22 Jun 2021 12:20:14 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T12:20:13.299Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"recipeweb","name":"recipeweb"}
+[debug] [2021-06-22T12:20:17.241Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 22 Jun 2021 12:20:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=834","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T12:20:17.242Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
