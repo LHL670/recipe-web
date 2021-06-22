@@ -1,0 +1,70 @@
+
+.Rbox{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px;
+    box-shadow: 0px 5px 15px;
+    background: white;
+    min-width: 40%;
+    align-items: center;
+    padding: 20px;
+    min-width: 40%;
+    
+  }
+.Runderline
+{
+    font-family: ArchitectsDaughter-Regular;
+    text-decoration: underline;
+    text-align: center;
+    
+
+}
+
+.Rtext{
+    font-family: PatrickHand-Regular;
+    
+    letter-spacing:1px;
+}
+.Rtext-nu{
+    font-family: PatrickHand-Regular;
+    
+    display: flex;
+    letter-spacing:1px;
+}
+.Ringredient-list {
+    margin-top: 1rem;
+    font-size: 20px;
+    padding:0;
+    list-style-type:none;
+    
+  }
+.Rshow-button{
+    border-radius: 15px;
+    margin: 5px;
+    background-color: aliceblue;
+    letter-spacing:1px;
+    padding: 1px;
+}
+.Rimg{
+    border-radius: 15px;
+}
+.Rshow-button{
+    font-family: PatrickHand-Regular;
+}
+li{
+    font-size: 3vh;
+}
+h2{
+    font-size: 5.5vh;
+}
+h3{
+    font-size: 3.2vh;
+}
+p{
+    font-size: 4vh;
+}
+.Ipicture{
+    min-height: 5vh;
+}

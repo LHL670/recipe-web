@@ -1,0 +1,57 @@
+@font-face {
+    font-family: ArchitectsDaughter-Regular;
+    src: url(font/ArchitectsDaughter-Regular.ttf);
+}
+.Ibody{
+   
+    background-image: url("https://www.maggi.com.au/sites/default/files/styles/maggi_desktop_image_style/public/tips-for-selecting-fresh-vegetables.jpg?h=4f5b30f1&itok=98icKHrk");
+    margin: 0;
+    width:100%;
+    padding: 0;
+    height: 100%;
+    
+}
+.Ititle{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    font-family: PatrickHand-Regular;
+    font-size: 54px;
+    letter-spacing:2px;
+    color: white;
+    font-weight: bold;
+    
+    -webkit-text-stroke: 0.2px #5B5B5B;
+   
+   
+}
+.Ibox{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 5px 15px;
+    background: white;
+    min-width: 80%;
+    min-height: 500px;
+    align-items: center;
+    padding: 5%;
+    opacity: 95%;    
+  }
+
+
+.Iblock{
+    color: white;
+}
+.Itext{
+    
+    text-align: center;
+    min-height: 800px;
+    max-width: 600px;
+    color: black;
+    padding: 20px;
+    
+}
+.Ipicture{
+    min-height: 5vh;
+}

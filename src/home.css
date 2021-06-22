@@ -1,0 +1,42 @@
+@font-face {
+    font-family:ArchitectsDaughter-Regular;
+    src: url(font/ArchitectsDaughter-Regular.ttf);
+  }
+  @font-face {
+    font-family: PatrickHand-Regular;
+    src: url(font/PatrickHand-Regular.ttf);
+  }
+  
+.homee{
+    min-height:100vh;
+    min-width: 100hv;
+    background:url(pancake.jpg);
+    background-size:100%;
+    background-position: center;
+    opacity:0.8;
+}
+.ent {
+    font-family:ArchitectsDaughter-Regular;
+    position:fixed;
+    transform:translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px;
+    box-shadow: 0px 5px 15px;
+    background: white;
+    min-width: 40%;
+    align-items: center;
+    padding: 25px;
+    
+    opacity:0.7;
+    
+  }
+  .but{
+    font-family: PatrickHand-Regular;
+    opacity:1;
+  }

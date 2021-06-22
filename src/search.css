@@ -1,0 +1,26 @@
+.SAPP .body{
+  height:100%;
+  width:100%;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.search_box{
+  min-height: 10vh;
+  align-items: center;
+  justify-content:center;
+  display:flex;
+}
+.search_place{
+  width: 30%;
+  border: none;
+  padding: 10px;
+  background-color: #ECFFFF;
+}
+.text_box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+

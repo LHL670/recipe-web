@@ -1,0 +1,19 @@
+  .paper{
+    font-family: ArchitectsDaughter-Regular;
+    font-size: 50px;
+    margin-Top: 90px;
+    display: flex;
+    flex-Direction: column;
+    align-Items: center;
+  }
+  .avatar {
+    margin: theme-spacing(1);
+    background-Color: theme-palette-secondary-main;
+  }
+  .form{
+    width: 100%;
+    margin-Top: theme-spacing(1);
+  }
+  .submit{
+    margin:3, 0, 2;
+  }

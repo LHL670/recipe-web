@@ -1,68 +1,41 @@
-import { List } from "@material-ui/core";
-import React, { Component } from "react";
-import "./App.css";
-import TodoForm from "./todoform";
-import TodoList from "./todolist";
-import Title from "./ToDoTitle"
+import React, { Component } from 'react';
+import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './home';
+import TodoApp from './todoApp';
+import Router_h from './router';
+import SignIn from './login';
+import RecipeAPP from './RecipeAPP';
+import Introduction from './introduction';
 
-
-class App extends Component {
-    state = {
-        todoItems: {}
-    };
-
-    addToDoItems = item => {
-        const items = { ...this.state.todoItems };
-        console.log(items);
-        items[`item${Date.now()}`] = item;
-        this.setState({
-        todoItems: items
-        });
-    };
-
-    removeToDoItem = item => {
-        const todos = { ...this.state.todoItems };
-        delete todos[item];
-        this.setState({ todoItems: todos });
-    };
-
-    updateTodos = (key, updatedTodo) => {
-        const todos = { ...this.state.todoItems };
-        todos[key] = updatedTodo;
-        this.setState({ todoItems: todos });
-    };
-
-    render() {
-        return (
-        <div className="main" >
-            <Title/>
-            <TodoForm addToDoItems={this.addToDoItems} />
-            <ul>
-            {Object.keys(this.state.todoItems).map(key => (
-                <TodoList
-                key={key}
-                index={key}
-                todoItems={this.state.todoItems[key]}
-                removeToDoItem={this.removeToDoItem}
-                updateTodos={this.updateTodos}
-                />
-            ))}
-            </ul>
-            
-        </div>
-        );
-    }
+function App() 
+{
+  return (
+    <Router>
+      <div className="App">
+        
+        <Route exact path="/" >
+          <Home/>
+        </Route>
+        <Route exact path="/reciepe" >
+          <Router_h/>
+          <RecipeAPP/>
+        </Route>
+        <Route exact path="/intro" >
+          <Router_h/>
+          <Introduction/>
+        </Route>
+        <Route path="/login" >
+          <Router_h/>
+          <SignIn/>
+        </Route>
+        <Route path="/todolist" >
+          <Router_h/>
+          <TodoApp/>
+        </Route>
+      </div>
+    </Router>
+);
 }
-const list = {
-    
-    paddingleft:'200px',
-    marginright:'auto',
- 
-}
-
-
-  
-
-
 
 export default App;

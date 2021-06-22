@@ -1,18 +1,32 @@
 import React from "react";
+import { ListItem, ListItemText, Button } from "@material-ui/core";
+import { db } from "./firebase_config";
+import "./todo.css";
 
-const Todo = ({ onComplete, todo }) => {
-  function handleComplete() {
-    onComplete(todo.id);
+export default function TodoListItem({ todo, inprogress, id }) {
+    function toggleInProgress() {
+        db.collection("todos").doc(id).update({
+        inprogress: !inprogress,
+        });
+    }
+
+  function deleteTodo() {
+    db.collection("todos").doc(id).delete();
   }
 
   return (
-    <li
-      style={{ textDecoration: todo.complete ? "line-through" : "" }}
-      onClick={handleComplete}
-    >
-      {todo.text}
-    </li>
-  );
-};
+    <div class="listitem" style={{ display: "flex" }}>
+    <Button onClick={toggleInProgress}>
+        {inprogress ? "V" : " "}
+    </Button>
 
-export default Todo;
+    <ListItem>
+        <ListItemText
+        primary={todo}
+        />
+    </ListItem>
+
+    <Button onClick={deleteTodo}>X</Button>
+    </div>
+  );
+}

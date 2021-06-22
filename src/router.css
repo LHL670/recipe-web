@@ -1,0 +1,17 @@
+
+.links{
+    font-family:ArchitectsDaughter-Regular;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 5px 15px;
+    background: white;
+    min-width: 40%;
+    padding: 25px;
+    
+}
+
+.header{
+    text-align: center;
+}
